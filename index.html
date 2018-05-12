@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href="index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <input id="startButton" class="start" type="button" value="Start">
+	<div id="gui" class="hidden">
+	  <div class="actions">
+	    <input id="attackButton" type="button" value="Attack">
+	    <input id="healButton" type="button" value="Heal">
+	    <input id="quitButton" type="button" value="Quit">
+	  </div>
+	  <p id="combatLog">Test Paragraph text!</p>
+	  <div id="statBlockContainer">
+	    <h1>Player Stats</h1>
+		<div class="playerStatBlock">
+		  <div>
+		    <p>Name</p>
+			<p id="playerNameDisplay">Test Name</p>
+		  </div>
+		  <div>
+		    <p>Health</p>
+			<div class="statContainter">
+			  <progress id="playerHealthBar" value="40" max="40"></progress>
+			  <!-- <div class="statBar" id="playerCharacterHealth"></div> -->
+			</div>
+		  </div>
+		  <div>
+		    <p>Heal Count</p>
+			<div class="statContainter">
+			  <progress id="playerHealCount" value="2" max="2"></progress>
+			  <!-- <div class="statBar" id="playerCharacterHeals"></div> -->
+			</div>
+		  </div>
+		  <div>
+		    <p>Wins</p>
+			<div class="statContainter">
+			  <progress id="playerWins" value="0" max="5"></progress>
+			  <!-- <div class="statBar" id="playerCharacterWins"></div> -->
+			</div>
+		  </div>
+	    </div>
+		<h1>Enemy Stats</h1>
+	    <div class="enemyStatBlock">
+		  <div>
+		    <p>Name</p>
+			<p>Grant</p>
+		  </div>
+		  <div>
+		    <p>Health</p>
+			<div class="statContainter">
+			  <progress id="enemyHealthBar" value="10" max="10"></progress>
+			  <!-- <div class="statBar" id="enemyCharacterHealth"></div> -->
+			</div>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
+</html>
